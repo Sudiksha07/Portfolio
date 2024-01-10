@@ -1,0 +1,131 @@
+.about {
+    &__content {
+        display: flex;
+        // flex-direction: column;
+        // margin-right: 20px;;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+
+        &__personalWrapper,
+        &__servicesWrapper {
+            width: 50%;
+        }
+
+        &__personalWrapper {
+            h3 {
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
+            }
+
+            h3.personalInformationHeaderText {
+                padding-top: 20px;
+            }
+
+            p {
+                color: var(--yellow-theme-sub-text-color);
+                font-size: 1.8rem;
+                line-height: 1.65;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed var(--yellow-theme-main-color);
+            }
+
+            ul>li {
+                line-height: 1rem;
+                margin-bottom: 15px;
+
+
+                span.title,
+                span.value {
+                    font-size: 18px;
+                    ;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    border-bottom: 2px solid var(--yellow-theme-main-color);
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 16px;
+                    padding-bottom: 5px;
+                    color: var(--yellow-theme-sub-text-color);
+
+                }
+
+                ;
+
+                span.value {
+                    border: none;
+                }
+            }
+
+
+        }
+
+        &__servicesWrapper {
+            // // display: flex;
+            // // display: inline-block;
+            &__innerContent {
+            //     width: 350px;
+            //     height: 350px;
+            //     // display:flex;
+            //     // background-image:" D:\ReactProject\portfolio\src\images\img.png";
+            //     background: radial-gradient(180px,var(--yellow-theme-main-color), transparent 90%);
+            // position: relative;
+
+            // border-radius: 50%;;
+            //  border: 1.5px solid var(--yellow --yellow-theme-main-color);
+      
+
+            //  img{
+            //     width:60vh;
+            //     height: 80%;
+            // border-radius: 50%;
+            //     // overflow: hidden;
+            //     // clip-path: circle();
+            //     // height: 420px;
+
+            //     position: relative;
+            //  }
+            // }
+        // }
+
+              width:100%;
+             margin: 50px;
+             margin-left: 110px;
+              height: 350px;
+              aspect-ratio: 1/1;
+              border-radius: 2rem;
+              background: linear-gradient(45deg,transparent,var(--yellow-theme-main-color),transparent);
+              display: grid;
+              place-items: center;
+              img{
+                width:100%;
+                height:100% ;
+                border-radius: 2rem;
+                overflow: hidden;
+                transform: rotate(10deg);
+                transition: var(--transition);
+              }
+              img:hover{
+                transform: rotate(0);
+              }
+
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:600px){
+    .about__content{
+        flex-direction: column;
+        &__personalWrapper {
+            width: 100%;
+        }
+
+    
+}
+
+}
